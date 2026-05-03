@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plantinel MVP</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Plantinel</h1>
+      <p>Capture plant issues, review remedies, and explore community knowledge.</p>
+    </header>
+
+    <nav class="tabs" id="tabs">
+      <button data-tab="capture" class="active">Capture</button>
+      <button data-tab="library">Library</button>
+      <button data-tab="collections">Collections</button>
+      <button data-tab="explore">Explore</button>
+    </nav>
+
+    <main>
+      <section id="capture" class="tab active">
+        <h2>Capture</h2>
+        <label>Plant name <input id="plantName" placeholder="Monstera" /></label>
+        <label>Symptoms <textarea id="symptoms" placeholder="Yellowing leaves, brown edges"></textarea></label>
+        <button id="runCapture">Generate Diagnosis</button>
+        <pre id="captureResult"></pre>
+      </section>
+
+      <section id="library" class="tab">
+        <h2>Library</h2>
+        <button id="loadLibrary">Load plants + remedies</button>
+        <div id="libraryList"></div>
+      </section>
+
+      <section id="collections" class="tab">
+        <h2>Collections</h2>
+        <button id="loadCollections">Load Collections</button>
+        <ul id="collectionsList"></ul>
+      </section>
+
+      <section id="explore" class="tab">
+        <h2>Explore</h2>
+        <button id="loadExplore">Load community + marketplace</button>
+        <div id="exploreList"></div>
+      </section>
+    </main>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
