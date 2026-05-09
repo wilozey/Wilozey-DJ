@@ -1,0 +1,10 @@
+{
+  "name": "agent-teams",
+  "version": "1.0.0",
+  "description": "Multi-agent team coordination with specialized roles for parallel development, debugging, and code review",
+  "author": {
+    "name": "Seth Hobson",
+    "email": "seth@major7apps.com"
+  },
+  "license": "MIT"
+}
